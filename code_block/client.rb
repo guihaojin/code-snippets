@@ -9,7 +9,7 @@ class Client
 
   def send_message(msg)
     connection do |socket|
-      socket.put(msg)
+      socket.puts(msg)
       socket.gets
     end
   end
@@ -28,4 +28,11 @@ class Client
   ensure
     socket.close
   end
+end
+
+client = Client.new
+
+["Hello", "My name is Greg", "Goodbye"].each do |msg|
+  response = client.send_message(msg)
+  puts response
 end
