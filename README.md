@@ -1,3 +1,3 @@
-# Cool Ruby
+# Code Snippets
 
-A collection of cool Ruby code snippets.
+A collection of cool code snippets.
