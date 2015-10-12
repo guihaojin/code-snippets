@@ -1,3 +1,5 @@
+# the power of code block
+
 #---
 # Excerpted from "Seven Languages in Seven Weeks",
 # published by The Pragmatic Bookshelf.

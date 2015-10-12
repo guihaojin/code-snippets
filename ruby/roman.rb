@@ -1,3 +1,5 @@
+# a beautiful example of method_missing
+
 #---
 # Excerpted from "Seven Languages in Seven Weeks",
 # published by The Pragmatic Bookshelf.
