@@ -1,3 +1,3 @@
 # Code Snippets
 
-A collection of cool code snippets.
+A collection of code snippets.
