@@ -30,7 +30,16 @@ key = curses.KEY_RIGHT # Right-arrow
 
 while True:
     next_key = w.getch() # get a character
-    key = key if next_key == -1 else next_key
+    # key = key if next_key == -1 else next_key
+
+    if next_key == -1 or \
+        (key == curses.KEY_RIGHT and next_key == curses.KEY_LEFT) or \
+        (key == curses.KEY_LEFT and next_key == curses.KEY_RIGHT) or \
+        (key == curses.KEY_DOWN and next_key == curses.KEY_UP) or \
+        (key == curses.KEY_UP and next_key == curses.KEY_DOWN):
+        key = key
+    else:
+        key = next_key
 
     if snake[0][0] in [0, sh] or snake[0][1] in [0, sw] or snake[0] in snake[1:]:
         curses.endwin() # de-initialize curses library, return terminal to normal status
